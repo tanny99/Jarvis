@@ -9,7 +9,7 @@ import wikipedia
 import webbrowser
 import os
 import smtplib
-
+# Try using raspberry pie and other sensors for better automation.
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
