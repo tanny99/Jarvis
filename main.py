@@ -110,15 +110,13 @@ if __name__ == "__main__":
             strTime = datetime.datetime.now().strftime("%I:%M:%S")    
             speak(f"Boss, the time is {strTime}")
 
-        elif 'open code' in query:
-            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
-            os.startfile(codePath)
+    
 
-        elif 'email to harry' in query:
+        elif 'email to tanishk' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "harryyourEmail@gmail.com"    
+                to = "tanishkgupta1010@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
